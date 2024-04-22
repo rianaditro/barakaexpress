@@ -7,7 +7,8 @@ class Scraper:
         self.client = httpx.Client()
 
     def get_html(self, url):
-        payload = {'prom': 'LGD', 'tujuan': 'RIAU', 'brt': '2', 'da': 'MOJOKERTO', 'tuj': 'PEKANBARU', 'le': '10', 'pa': '10', 'ti': '10', 'hitung': ''}
+        # payload = {'prom': 'LGD', 'tujuan': 'RIAU', 'brt': '2', 'da': 'MOJOKERTO', 'tuj': 'PEKANBARU', 'le': '10', 'pa': '10', 'ti': '10', 'hitung': ''}
+        payload = {'prom': 'LGD', 'tujuan': 'RIAU', 'brt': '2', 'da': 'MOJOKERTO', 'tuj': 'PEKANBARU', 'hitung': ''}
         r = self.client.post(url, data=payload)
         if r.status_code == 200:
             print("Response: OK")
