@@ -47,7 +47,7 @@ def main(payload):
 
 
 if __name__ == "__main__":
-    payload = {'prom': 'LGD', 'tujuan': 'RIAU', 'brt': '2', 'da': 'MOJOKERTO', 'tuj': 'PEKANBARU', 'hitung': ''}
+    payload = {'prom': 'JBAR', 'tujuan': 'JABAR', 'brt': '2', 'kol':'0', 'le':'10', 'pa':'10', 'ti':'10', 'da': 'CIAWI TASIK', 'tuj': 'LEMBANG', 'hitung': ''}
     
     ongkir = main(payload)
     print(ongkir)
