@@ -33,6 +33,9 @@ class Parser:
             return result
         else:
             print("Some data might lost.")
+            for i in range(len(label)):
+                result[label[i]] = "None"
+            return result
 
 
 
